@@ -70,7 +70,7 @@ h6 {
 }
 
 a {
-    color: $contessa;
+    color: $tall-poppy;
     transition: color ease 0.3s;
     &:hover {
         color: $selection-background-and-link-hover;
@@ -101,7 +101,7 @@ blockquote {
     box-sizing: border-box;
     margin: 1.6em 0 1.6em -2.2em;
     padding: 0 0 0 1.6em;
-    border-left: $comet 0.4em solid;
+    border-left: $eminence 0.4em solid;
     p {
         margin: 0.8em 0;
         font-style: italic;
@@ -110,7 +110,7 @@ blockquote {
         display: inline-block;
         margin: 0.8em 0 0.8em 1.5em;;
         font-size:0.9em;
-        color: $silver;
+        color: $dove-gray;
         &:before { content: '\2014 \00A0'; }
     }
     cite {
@@ -154,8 +154,8 @@ code, tt {
     font-family: "Courier New", Courier, monospace;
     font-size: 0.75em;
     white-space: pre;
-    border: 1px solid $river-bed;
-    background: $comet;
+    border: 1px solid $mine-shaft;
+    background: $eminence;
     border-radius: 2px;
 }
 
@@ -163,7 +163,7 @@ pre {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin: 1.6em 0;
-    border: 1px solid $river-bed;
+    border: 1px solid $mine-shaft;
     width: 100%;
     padding: 10px;
     /*font-family: Menlo, Consolas, Monaco, "Lucida Console", monospace;*/
@@ -171,7 +171,7 @@ pre {
     font-size: 0.8em;
     white-space: pre;
     overflow: auto;
-    background: $comet;
+    background: $eminence;
     border-radius: 3px;
 }
 
@@ -188,7 +188,7 @@ kbd {
     display: inline-block;
     margin-bottom: 0.4em;
     padding: 1px 8px;
-    border: $silver 1px solid;
+    border: $dove-gray 1px solid;
     color: #666;
     text-shadow: #fff 0 1px 0;
     font-size: 0.9em;
@@ -215,7 +215,7 @@ table td {
     line-height: 20px;
     text-align: left;
     vertical-align: top;
-    border-top: 1px solid $river-bed;
+    border-top: 1px solid $mine-shaft;
 }
 
 table th { color: #000; }
@@ -235,7 +235,7 @@ table table table { background-color: #fff; }
 
 table tbody > tr:nth-child(odd) > td,
 table tbody > tr:nth-child(odd) > th {
-    background-color: $comet;
+    background-color: $eminence;
 }
 
 table.plain {
@@ -247,9 +247,9 @@ table.plain {
 
 
 button, input, select, textarea {
-    background: $comet;
-    border: 1px solid $river-bed;
+    background: $eminence;
+    border: 1px solid $mine-shaft;
     color: $text;
-    outline-color: $contessa
+    outline-color: $tall-poppy
 
 }

@@ -11,3 +11,6 @@
 @import "theme/media";
 @import "theme/koenig";
 @import "theme/homepage.scss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

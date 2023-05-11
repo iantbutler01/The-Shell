@@ -4,32 +4,38 @@ const { watch } = require('gulp');
 // gulp plugins and utils
 const sourcemaps = require('gulp-sourcemaps');
 const zip = require('gulp-zip');
-const sass = require('gulp-sass');
-const browserSync = require("browser-sync").create();
+const tailwind = require("tailwindcss");
 
-sass.compiler = require('node-sass');
+const postcss = require("gulp-postcss")
+
+const sass = require('gulp-sass')(require('node-sass'));
 
 // css plugins
 const autoprefixer = require('gulp-autoprefixer');
-
 function reload() {
     browserSync.reload();
 }
+
+const plugins = [
+  tailwind,
+  autoprefixer
+]
 
 function styles() {
     return gulp.src('assets/scss/screen.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(postcss(plugins))
         .pipe(sourcemaps.write())
-        .pipe(autoprefixer({browsers: ['last 2 versions']}))
         .pipe(gulp.dest('assets/css/'))
-        .pipe(browserSync.stream());
 }
 
 function release() {
     var targetDir = 'dist/';
-    var themeName = require('./package.json').name;
+    var themeName = require('./package.json').name + "2";
     var filename = themeName + '.zip';
+
+    styles()
 
     return gulp.src([
         '**',
@@ -42,10 +48,6 @@ function release() {
 }
 
 function watchFiles() {
-    browserSync.init({
-        proxy: "localhost:2368"
-    });
-
     watch(['assets/scss/**/*.scss'], styles);
     watch(['**/*.hbs'], styles);
 }

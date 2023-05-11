@@ -8,17 +8,14 @@
     height: 60%;
     margin-bottom: 5rem;
     text-align: center;
-    color: #a0add5;
-    background: $selection-text-and-header-background no-repeat center center;
+    color: $heading;
+    background-color: rgba(0,0,0,0.3);
     background-size: cover;
 }
 
 #blog {
     &-logo {
-        width: 100px;
         border-radius: 50%;
-        overflow: hidden;
-        display: block;
         margin: 0 auto;
         position: relative;
         &:before {
@@ -40,10 +37,8 @@
             -o-transition: background .3s linear;
             transition: background .3s linear;
         }
-        &:hover:before {
-            background: rgba(204,31,39, 0.5);
-        }
-        img {
+
+        img.site-logo {
             display: block;
             max-height: 100px;
             width: auto;
@@ -131,7 +126,7 @@
     }
     &-header {
         a {
-            color: $contessa;
+            color: $tall-poppy;
             transition: color ease 0.3s;
             &:hover {
                 color: $selection-background-and-link-hover;

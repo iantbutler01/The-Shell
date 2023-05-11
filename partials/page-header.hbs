@@ -1,0 +1,11 @@
+<article class="introduction p-8 sm:p-4 mt-16">
+    <h1 class="text-5xl sm:text-6xl ml-auto mr-auto blog-title">{{@site.title}}</h1>
+    <h2 class="text-center ml-auto p-4 mr-auto blog-description">{{@site.description}}</h2>
+    <div class="introduction-container">
+        {{#if @site.logo}}
+        <a id="blog-logo" class="p-8" href="{{@site.url}}">
+            <img src="{{@site.logo}}" alt="Blog Logo" class="introduction-container-img site-logo" />
+        </a>
+        {{/if}}
+    </div>
+</article>

@@ -1,12 +1,19 @@
-$text: #B2B6BD;
+
+/* SCSS HEX */
+$steel-gray: #181821;
+$hawkes-blue: #d8e2fc;
+$port-gore: #2c2454;
+$martinique: #343454;
+$dove-gray: #6c6c6c;
+$tall-poppy: #ac2834;
+$mine-shaft: #343434;
+$eminence: #68347c;
+$chambray: #34507c;
+
+$text: $hawkes-blue;
 $background: #2b303b;
 $selection-text-and-header-background: #1c212b;
-$selection-background-and-link-hover: #a3be8c;
-$heading: #739a99;
-$border: #424650;
+$selection-background-and-link-hover: $chambray;
+$heading: $hawkes-blue;
 
-$contessa: #bf6165;
-$comet: #4f586b;
-$river-bed: #424a5a;
-
-$silver: #ccc;
+$border: $port-gore;
